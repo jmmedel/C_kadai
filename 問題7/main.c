@@ -26,5 +26,6 @@ int main()
     b=work;
     printf("%5d\n",a);
     printf("%5d",b);
+
     return 0;
 }

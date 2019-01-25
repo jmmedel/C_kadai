@@ -6,21 +6,26 @@
 
 C言語認定試験向け課題　問13
 
-１．ｆｌｏａｔ型変数ａにデータを入力する
-２．１行目にａを小数形式（小数点以下２桁）で出力する
-３．２行目にａを指数形式（小数点以下２桁）で出力する
-（小文字）
+ループ演算子と算術演算子を使用して、cの数値を逆にすることができます。
+このプログラムでは、ユーザーからの入力として番号を取得し、
+その番号を元に戻します。与えられた数を逆にする簡単なcの例を見てみましょう。
+
 https://github.com/jmmedel/C_kadai
 */
 
-int main()
+
+ int main()
 {
+int n, reverse=0, rem;
+printf("番号を入力してください。");
+  scanf("%d", &n);
+  while(n!=0)
+  {
+     rem=n%10;
+     reverse=reverse*10+rem;
+     n/=10;
+  }
+  printf("逆数： %d",reverse);
 
-    float a;
-    scanf("%f",&a);
-    printf("%.2f\n",a);
-    printf("%.2e\n",a);
-
-
-    return 0;
+return 0;
 }

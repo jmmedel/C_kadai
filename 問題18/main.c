@@ -12,7 +12,7 @@ C‚ÌŠKæŒv‰æFn‚ÌŠKæ‚ÍA‚·‚×‚Ä‚Ì³‚Ì~‡®”‚ÌÏ‚Å‚·B n‚ÌŠKæ‚ÍnI‚Å•\‚³‚ê‚Ü‚·
 
 5I = 5 * 4 * 3 * 2 * 1 = 120
 3I = 3 * 2 * 1 = 6
-
+https://github.com/jmmedel/C_kadai
 */
 int main()
 {

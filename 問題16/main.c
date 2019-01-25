@@ -1,20 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+
+
+/*
+
+3番目の変数を使わずに2つの数を入れ替えます。
+3番目の変数を使用せずに2つの数字を交換するには、
+2つの一般的な方法があります。
+
+1. + と  -
+
+
+ */
+ int main()
 {
-
-
-    int a= 'z',i=0;
-while(a>='a')
-{
-    printf("%c",a);
-    i++;
-    a=1;
-    if(i%7==0){
-        printf("\n");
-    }
-
-}
-
+int a=10, b=20;
+printf("スワップ前 a=%d b=%d",a,b);
+a=a+b;//a=30 (10+20)
+b=a-b;//b=10 (30-20)
+a=a-b;//a=20 (30-10)
+printf("\n交換後 a=%d b=%d",a,b);
+return 0;
 }

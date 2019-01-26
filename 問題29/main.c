@@ -17,7 +17,8 @@ CŒ¾Œê”F’èŒ±Œü‚¯‰Û‘è@–â29
 int tri(int,int);
 int main()
 {
-   int hen,takasa,menseki;
+
+int hen,takasa,menseki;
 scanf("%d%d",&hen,&takasa);
 menseki = tri(hen,takasa);
 printf("%d",menseki);

@@ -14,13 +14,9 @@ CŒ¾Œê”F’èŒ±Œü‚¯‰Û‘è@–â32
 */
 int main()
 {
-
-
    int year;
-
     printf("Enter a year: ");
     scanf("%d",&year);
-
     if(year%4 == 0)
     {
         if( year%100 == 0)
@@ -36,7 +32,4 @@ int main()
     }
     else
         printf("%d •½”N.", year);
-
-
-
 }

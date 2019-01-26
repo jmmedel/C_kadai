@@ -1,8 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
-int main()
+
+/*
+
+CŒ¾Œê”F’èŒ±Œü‚¯‰Û‘è@–â38
+
+‚PD‚ƒ‚ˆ‚‚’Œ^‚PŸŒ³”z—ñ‚‚É‹ó”’‚ğŠÜ‚Ş•¶š—ñ‚ğ1s•ª“ü—Í‚·‚éiÅ‘å‚P‚O‚O•¶š•ªj
+‚QD‚“à‚Ì‰p¬•¶š‚ğ‰p‘å•¶š‚ÉA‰p‘å•¶š‚ğ‰p¬•¶š‚É•ÏŠ·‚·‚éB
+‚RD‚‚ğ•¶š—ño—Í‚·‚éB
+
+*/
+void main(void)
 {
-    printf("Hello world!\n");
-    return 0;
+char str[] = "KaGaya JOhN  ";
+
+
+   printf("%s \n",str);
+    for ( int i=0; str[i]!= '\0'; i++)
+    {
+
+        if (islower(str[i]) != 0){
+            str[i]  = toupper(str[i]);
+
+        }
+
+        else if (isupper(str[i]) != 0){
+            str[i]  = tolower(str[i]);
+
+        }
+
+    }
+    printf("%s \n",str);
+
+
 }
+
